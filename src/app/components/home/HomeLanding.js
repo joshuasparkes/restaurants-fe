@@ -15,7 +15,7 @@ export const HomeLanding = () => {
   return (
     <div className="flex flex-col text-center justify-start items-start">
       <div className="h-full w-full flex flex-col justify-start items-center ">
-        <div className="relative w-full" style={{ height: "40vh" }}>
+        <div className="relative w-full h-60 md:h-80 lg:h-80">
           <Image fill objectFit="cover" alt="waiting" src={"/Food.webp"} />
         </div>
         <div className="text-teal-400 font-semibold my-3">
