@@ -12,7 +12,7 @@ export const Header = () => {
   };
 
   return (
-    <div className="h-16 py-10 flex flex-row text-sm justify-between items-center px-4">
+    <div className="h-12 py-8 flex flex-row text-sm justify-between items-center px-4">
       <Image src={"/Logo.webp"} height={50} width={50} alt="logo" />
       <div className="md:flex hidden gap-8">
         <div className="flex gap-8 items-left">

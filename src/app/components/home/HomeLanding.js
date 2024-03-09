@@ -2,12 +2,8 @@
 import React, { useState } from "react";
 import { ContactUs } from "../modals/ContactUs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLink,
-  faLocation,
-  faLocationArrow,
-  faPaperPlane,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLink, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export const HomeLanding = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,13 +13,16 @@ export const HomeLanding = () => {
   };
 
   return (
-    <div className=" flex flex-col text-center justify-between mt-10 items-center px-10">
-      <div className="h-screen flex flex-col justify-center items-center -mt-32">
-        <div className="text-teal-400 font-semibold mb-3">
+    <div className="flex flex-col text-center justify-start items-start">
+      <div className="h-full w-full flex flex-col justify-start items-center ">
+        <div className="relative w-full" style={{ height: "40vh" }}>
+          <Image fill objectFit="cover" alt="waiting" src={"/Food.webp"} />
+        </div>
+        <div className="text-teal-400 font-semibold my-3">
           Welcome to Future Restaurants Program.
         </div>
         <div className="text-4xl font-bold mb-3">Deliver, Collect, Eat-in.</div>
-        <div className="text-sm mb-5 font-semibold text-gray-300 px-10 text-center">
+        <div className="text-sm mb-5 font-semibold text-gray-600 px-10 text-center">
           Find a place close to home for collection, delivery, or to eat-in.
         </div>
         <div className="flex flex-col text-sm gap-3">
